@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+<title>BooksRUS</title>
+<!-- importing the stylesheet -->
+<link href="FrontPageStyle.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+
+<!-- Start of div container that contains head section, main section and footer section  -->
+	<div id=pageContainer>
+	
+		<!-- Start of top section -->
+		<div id="topSection">
+		
+		<!-- Store name and sloogan in top section  -->
+			<h1 class="welcome"><a class="welcome" href="ass1.html">BooksRUS</a></h1>
+			<h4 class="slogan"> Best Secondhand Book Shop in Geelong</h4>
+			
+			<!-- line that devides the page -->
+			<hr class="welcome">
+			
+			<!-- Buttons in top sections  -->
+			<div class="buttons">
+				<a href= "about.html"><button class="buttonGroupMenu">about</button></a>
+				<a href= "books.html"><button class="buttonGroupMenu">Books</button></a>
+				<a href= "contact.html"><button class="buttonGroupMenu">Contact</button></a>
+			</div>
+
+		</div>
+
+<!-- Start of main section -->
+		<div id="mainSection">
+		
+<!-- Search form. wrapped in div to center it.   -->
+		<div class = "try">
+			<form class = "searchForm" action="test.php" method="post" name="searchForm" id="searchForm">
+				<input type = "text" placeholder="Book Title" name = "bookName" id = "bookName">
+				<input type = "text" placeholder="Author" name = "author" id = "author">
+				<input type = "text" placeholder="ISBN" name = "ISBN" id = "ISBN">
+				<input type = "text" placeholder="Categorie" list="categories" name="categorie">
+				
+					<!-- datalist used to get a list of the different categories  -->
+					<datalist id = categories>
+						<option value = "Non Fiction"> </option>
+						<option value = "Fiction"> </option>
+						<option value = "Children"> </option>
+						<option value = "Academic"> </option>
+					</datalist>
+				<!-- submit button -->
+				<input class="contactButtons" type="submit" name="SearchButton" value=" Search">
+			</form>
+			</div>
+			
+<!-- Table containing all the listed books. all formated in the same way. comments on first one -->
+
+			<table class = "books">
+				<thead title="All Books" > </thead>
+				
+<!-- My life by Willie Nelson -->
+			
+				<tr class = "booklist">
+				
+				<!-- picture used as hyperlink for further information about the book -->
+					<td> <a href = "bookPages/willieNelson_myLife.html" ><img class="listPic" alt="willie Nelson" src="pictures\willieNelson.jpg"></a></td>
+					<!-- quick information about the book -->
+					<td class = "books"> <p class="regular">
+					My Life <br> 
+					It's a Long Story <br> 
+					By: Willie Nelson <br> 
+					Paperback <br> 
+					Published: 26th May 2015;
+					</td>
+					<td class = "books">
+						<p class = "regular">$32.99
+					</td>
+					
+					<td class = "books">
+					<!-- Button to enter order form page -->
+						  <a href = "orderForm.html"><button class = "buyButton"> Buy </button></a>
+					</td>
+				</tr>
+				
+
+<!-- Sword of Summer -->				
+				<tr class = "bookList">
+					<td> <a href = "bookPages/swordOfSummer.html" ><img class="listPic" alt="sword of summer" src="pictures\swordOfSummer.jpg"></a></td>
+					<td class = "books"> <p class="regular">Sword of Summer<br> 
+						Magnus Chase : Book 1 <br>
+						By: Rick Riordan <br>
+						Paperback <br>
+						Available: 7th October 2015
+					</td>
+					<td class = "books">
+						<p class = "formerPrice">$19.99
+						<p class = "sale">now $15.99
+					</td>
+					<td class = "books">
+						<a href = "orderForm.html"><button class = "buyButton"> Buy </button></a>
+					</td>
+				</tr>
+
+<!-- Live well on less -->				
+				<tr class = "bookList">
+					<td> <a href = "bookPages/liveWellOnLess.html" ><img class="listPic" alt="live well on less" src="pictures\liveWellOnLessBig.jpg"></a></td>
+					<td class = "books"> <p class="regular">Live Well On Less<br> 
+						A Practical Guide to Running a Lean Household<br>
+						By: Jody Allen<br>
+						Paperback<br>
+						Published: 27th May 2015
+					</td>
+					<td class = "books">
+						<p class = "formerPrice">$24.99
+						<p class = "sale">now $19.00
+					</td>
+					<td class = "books">
+						<a href = "orderForm.html"><button class = "buyButton"> Buy </button></a>
+					</td>
+				</tr>
+
+<!-- Clementine Rose -->				
+				<tr class = "bookList">
+					<td> <a href = "bookPages/clementineRose.html" ><img class="listPic" alt="Clementine Rose" src="pictures\clementineRose.jpg"></a></td>
+					<td class = "books"> <p class="regular">Clementine Rose and the Birthday Emergency<br> 
+						Clementine Rose : Book 10<br>
+						By: Jacqueline Harvey<br>
+						Paperback<br>
+						Published: 1st July 2015
+					</td>
+					<td class = "books">
+						<p class = "regular">$12.99
+					</td>
+					<td class = "books">
+						<a href = "orderForm.html"><button class = "buyButton"> Buy </button></a>
+					</td>
+				</tr>
+				
+<!-- Introduction to computational science -->				
+				<tr class = "bookList">
+					<td> <a href = "bookPages/computationalScience.html" ><img class="listPic" alt="Computational Science" src="pictures\computationalScience.jpg"></a></td>
+					<td class = "books"> <p class="regular">Introduction to Computational Science<br> 
+						Modeling and Simulation for the Sciences<br>
+						By: Angela B. Shiflet, George W. Shiflet<br>
+						Published: 2nd May 2006<br>
+						Ships: 3 to 4 business days<br>
+					</td>
+					<td class = "books">
+						<p class = "formerPrice">$142.75
+						<p class = "sale"> now 132.75
+					</td>
+					<td class = "books">
+						<a href = "orderForm.html"><button class = "buyButton"> Buy </button></a>
+					</td>
+				</tr>
+				
+<!-- Fundamentals of digital logic -->				
+				<tr class = "bookList">
+					<td> <a href = "bookPages/digitalLogic.html" ><img class="listPic" alt="Digital Logic" src="pictures\digitalLogic.jpg"></a></td>
+					<td class = "books"> <p class="regular">Fundamentals of Digital Logic with VHDL Design<br> 
+						With CD-ROM<br>
+						By: Stephen Brown, Zvonko G. Vranesic<br>
+						Book with CD or DVD<br>
+						Published: 14th April 2008<br>
+						Ships: 5 to 9 business days<br>
+					</td>
+					<td class = "books">
+						<p class = "regular">$190.25
+					</td>
+					<td class = "books">
+						<a href = "orderForm.html"><button class = "buyButton"> Buy </button></a>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+
+
+<!-- Start of foot section -->
+		<div id="footer">
+
+			<p class="footer">©Deakin University, School of
+				Information Technology. This web page has been developed as a
+				student assignment for the unit SIT104: Introduction to Web
+				Development. Therefore it is not part of the University's authorised
+				web site. DO NOT USE THE INFORMATION CONTAINED ON THIS WEB PAGE IN
+				ANY WAY.</p>
+		</div>
+
+	</div>
+</body>
+</html>

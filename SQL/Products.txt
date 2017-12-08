@@ -1,0 +1,30 @@
+DROP TABLE Products;
+     
+     CREATE TABLE Products
+     ( Title VARCHAR(200), 
+       Title2 VARCHAR(200),
+       Author VARCHAR(200),
+       Price VARCHAR(10),
+       Sale VARCHAR(10), 
+       Published VARCHAR(20), 
+       Picture VARCHAR2(50),
+       ISBN VARCHAR(50), 
+       SiteLink VARCHAR(100),
+       Format VARCHAR(50),
+       Categorie VARCHAR(50),
+       Primary key (Title) 
+     ); 
+
+INSERT INTO Products VALUES ('My Life','It is a Long Story','Willie Nelson','$32.99','No Sale','26th May 2015','pictures\willieNelson.jpg','9780751561746','bookPages/willieNelson_myLife.html','Paperback','Non Fiction');    
+
+INSERT INTO Products VALUES ('Sword of Summer','Magnus Chase : Book 1','Rick Riordan','$19.99','$15.99','7th October 2015','pictures\swordOfSummer.jpg','9780751561746','bookPages/swordOfSummer.html','Paperback','Fiction');    
+
+INSERT INTO Products VALUES ('Live Well On Less','A Practical Guide to Running a Lean Household','Jody Allen','$24.99','$19.00','27th May 2015','pictures\liveWellOnLessBig.jpg','9780751561746','bookPages/liveWellOnLess.html','Paperback','Non Fiction');    
+
+INSERT INTO Products VALUES ('Clementine Rose and the Birthday Emergency','Clementine Rose : Book 10','Jacqueline Harvey','$12.99','No Sale','1st July 2015','pictures\clementineRose.jpg','9780751561746','bookPages/clementineRose.html','Paperback','Children');    
+
+INSERT INTO Products VALUES ('Introduction to Computational Science','Modeling and Simulation for the Sciences','Angela B. Shiflet, George W. Shiflet','$142.75','$132.75','2nd May 2006','pictures\computationalScience.jpg','9780691125657','bookPages/computationalScience.html','Hardcover','Academic');    
+
+INSERT INTO Products VALUES ('Fundamentals of Digital Logic with VHDL Design','With CD-ROM','Stephen Brown, Zvonko G. Vranesic','$190.25','No Sale','14th April 2008','pictures\digitalLogic.jpg','9780077221430','bookPages/digitalLogic.html','Book with CD or DVD','Academic');    
+
+commit;

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+<title>BooksRUS</title>
+<!-- importing the stylesheet -->
+<link href="FrontPageStyle.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+
+<!-- Start of div container that contains head section, main section and footer section  -->
+	<div id=pageContainer>
+		
+		<!-- Start of top section -->
+		<div id="topSection">
+		
+		<!-- Store name and sloogan in top section  -->
+			<h1 class="welcome"><a class="welcome" href="ass1.html">BooksRUS</a></h1>
+			<h4 class="slogan"> Best Secondhand Book Shop in Geelong</h4>
+			
+			<!-- line that devides the page -->
+			<hr class="welcome">
+			
+			<!-- Buttons in top sections  -->
+			<div class="buttons">
+				<a href= "about.html"><button class="buttonGroupMenu">about</button></a>
+				<a href= "books.html"><button class="buttonGroupMenu">Books</button></a>
+				<a href= "contact.html"><button class="buttonGroupMenu">Contact</button></a>
+			</div>
+
+		</div>
+
+<!-- Start of main section -->
+		<div id="mainSection">
+		
+		<!-- Opening hours -->
+			<h2 class= "starter"> Oppening Hours </h2>
+			<p class="regular" style="text-align: center">9:00am - 6:00pm Monday - Sunday </p>
+			<hr class="welcome">
+			
+		<!-- Contact information -->
+			<h2 class= "starter"> Contact Information </h2>
+			<!-- wrapped in div to align to center -->
+			<div style="text-align: center">
+				<!-- wrapped in another div to align the text left but in the center. -->
+				<div style="display: inline-block; text-align: left"><p class="regular">123 moorabool street <br>
+					Geelong, VIC 3220 brTel: 03 5244 1234<br>
+					Email: contact@BooksRUS.com.au
+					</p>
+				</div>
+			</div>
+			<hr class="welcome">
+			
+<!-- Start of contact Form -->
+			<h2 class= "starter">Contact Form</h2>
+			<form name="contactForm" id="contactForm" action="Contact.php" method="post" >
+			
+			<!-- Inputs are put in an unorded list -->
+				<ul class = "contactForm">
+					<li> <p class = "regular">Enter Name<br>
+						<input type = "text" name = "name" id = "name">
+						<br><br>
+						
+					</li>
+					
+					<li> <p class = "regular">Enter Email<br>
+						<input type = "email" name = "email" id = "email">
+						<br><br>
+					</li>
+					
+					<li><p class = "regular">Enter message<br>
+						<p class = "regular">(Max 1000 characters)<br>
+						<textarea rows="10" cols="50" name = "message" id = "message" maxlength="1000"> </textarea>
+					</li>
+				</ul>
+				
+				<!-- Submit and clear button -->
+				<div class="buttons">
+					<input class="contactButtons" type="submit" value=" Send Message"> <input class="contactButtons" type="reset" value="Clear Form"> 
+				</div>
+			</form>
+			<hr class="welcome">
+			
+		</div>
+
+
+<!-- Start of foot section -->
+		<div id="footer">
+
+			<p class="footer">©Deakin University, School of
+				Information Technology. This web page has been developed as a
+				student assignment for the unit SIT104: Introduction to Web
+				Development. Therefore it is not part of the University's authorised
+				web site. DO NOT USE THE INFORMATION CONTAINED ON THIS WEB PAGE IN
+				ANY WAY.</p>
+		</div>
+
+	</div>
+</body>
+</html>

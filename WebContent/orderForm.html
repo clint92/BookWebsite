@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>BooksRUS</title>
+<!-- importing the stylesheet -->
+<link href="FrontPageStyle.css" rel="stylesheet" type="text/css">
+
+<!-- importing javascript doc -->
+ <script type="text/javascript" src="validateOrderForm.js"></script>
+ <script type="text/javascript" src="try.js"></script>
+
+<script type="text/javascript">
+
+//Function that get the current date and set the min value of the expiry date to the given date.
+window.onload = function() {
+	
+	//Calculates the day. + 1 in month because javascript starts from 0.
+	var today = new Date();
+	var month = today.getMonth() + 1;
+	var year = today.getFullYear();
+	
+	//makes sure the format is correct to the month input
+	 if(month<10){
+	        month ="0"+ month
+	    }
+	var todayForm = year + "-" + month;
+	//Set the expiryDate min to the given date.
+	document.getElementById("expiryDate").setAttribute("min", todayForm)
+}
+</script>
+
+</head>
+
+<!-- ekstra style added to syncronize all inputs in this doc -->
+<style type="text/css">
+input{ margin:5px }
+</style>
+
+<body>
+
+<!-- Start of div container that contains head section, main section and footer section  -->
+	<div id=pageContainer>
+	
+		<!-- Start of top section -->
+		<div id="topSection">
+		
+		<!-- Store name and sloogan in top section  -->
+			<h1 class="welcome"><a class="welcome" href="ass1.html">BooksRUS</a></h1>
+			<h4 class="slogan"> Best Secondhand Book Shop in Geelong</h4>
+			
+			<!-- line that devides the page -->
+			<hr class="welcome">
+			
+			<!-- Buttons in top sections  -->
+			<div class="buttons">
+				<a href= "about.html"><button class="buttonGroupMenu">about</button></a>
+				<a href= "books.html"><button class="buttonGroupMenu">Books</button></a>
+				<a href= "contact.html"><button class="buttonGroupMenu">Contact</button></a>
+			</div>
+
+		</div>
+
+<!-- Start of main section -->
+		<div id="mainSection">
+		
+<!-- Start of the order form -->
+			<h2 class = "starter">Order Form</h2>
+			<form name="orderForm" id="orderForm" onSubmit="return validate(orderForm)" action="Orders.php" method="post">
+			
+			<!-- Table that contains different sections of the order form -->
+				<table class = "books">
+				
+				<!--R1 C1, containing buyer information  -->
+					<tr class = "bookList">
+						<td class = "bookInfo">
+							<h3 class = "regularHeadderCenter">Buyer Information</h3>		
+							<label class = "labelOrderForm">* Given Names</label> <input type="text" name="firstName" id="firstName"> <br>
+							<label class = "labelOrderForm">* Sir Name</label> <input type="text" name="lastName" id="lastName"> <br>
+							<label class = "labelOrderForm">* Mobile Phone</label> <input type="text" name="phoneNumber" id="phoneNumber" placeholder="0# #### ####" maxlength="10" > <br>
+							<label class = "labelOrderForm">* Email</label> <input type="email" name="emailAddress" id="emailAddress" placeholder="Name@mail.com"> <br>		
+						</td>
+						
+					<!-- R1 C2, containing payment information -->
+						<td class = "bookInfo">
+							<h3 class = "regularHeadderCenter">Payment Information</h3>
+								<label class = "labelOrderForm">* Card Holder</label> <input type="text" name="cardHolder" id="cardHolder" placeholder="As written on card"><br>
+								<label class = "labelOrderForm">* Card Number</label> <input type="text" name="cardNumber" id="cardNumber" placeholder="#### #### #### ####" maxlength="16" ><br>
+								<label class = "labelOrderForm">* CVC</label> <input type="text" name="CVC" id="CVC" maxlength="3" placeholder="###"><br>
+								<label class = "labelOrderForm">* Expiry Date</label> <input type="month" name="expiryDate" id="expiryDate"><br>
+						</td>
+					</tr>
+					
+				<!-- R2 C1, containing delivery information  -->
+					<tr class = "bookList">
+						<td class = "bookInfo">
+							<h3 class = "regularHeadderCenter">Delivery Information</h3>
+							<label class = "labelOrderForm">* Unit Number </label> <input type="text" name="unitNumber" id="unitNumber"> <br>
+							<label class = "labelOrderForm">* Street</label> <input type="text" name="street" id="street"> <br>
+							<label class = "labelOrderForm">* City</label> <input type="text" name="city" id="city"> <br>
+							<label class = "labelOrderForm">* Postal Code</label> <input type="text" name="postalCode" id="postalCode" maxlength="4"><br>
+							<p class = "sale"> All fields labeled with *, is required</p>
+						</td>
+						
+					<!-- R2 C2, containing buttons  -->
+						<td>
+							<input class="contactButtons" type="submit" name = "submit" value="Confirm" > 
+							<input class="contactButtons" type="reset" value="Clear Form"> <br>
+							
+						</td>
+					</tr>
+				</table>
+			</form>			
+		</div>
+
+
+<!-- Start of foot section -->
+		<div id="footer">
+
+			<p class="footer">©Deakin University, School of
+				Information Technology. This web page has been developed as a
+				student assignment for the unit SIT104: Introduction to Web
+				Development. Therefore it is not part of the University's authorised
+				web site. DO NOT USE THE INFORMATION CONTAINED ON THIS WEB PAGE IN
+				ANY WAY.</p>
+		</div>
+	</div>
+</body>
+</html>

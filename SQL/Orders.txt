@@ -1,0 +1,25 @@
+DROP TABLE Orders;
+DROP SEQUENCE Seq_orderNumber; 
+     
+     CREATE TABLE Orders( 
+     Name VARCHAR(200), 
+     SirName VARCHAR(200),
+     PhoneNumber VARCHAR(10),
+     Email VARCHAR(200),
+     CardHolder VARCHAR(200),
+     CardNumber VARCHAR(16),
+     CVC VARCHAR(3),
+     ExpiryDate VARCHAR(200),
+     UnitNumber VARCHAR(200),
+     Street VARCHAR(200),
+     City VARCHAR(200),
+     PostalCode VARCHAR(4)
+     ); 
+
+CREATE SEQUENCE Seq_orderNumber
+MINVALUE 1
+START WITH 1
+INCREMENT BY 1
+CACHE 10;
+
+commit;

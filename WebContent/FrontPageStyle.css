@@ -1,0 +1,281 @@
+@charset "ISO-8859-1";
+
+/*padding and margin set to 0 to be able to devide the page in sections with div*/
+body {
+	padding: 0;
+	margin: 0;
+	hight: 100%;
+}
+
+/* Used in contact doc to center the div that contains the buttons*/
+div.buttons {
+	text-align: center;
+}
+
+div.bookInfo
+{
+	padding: 0 20px 20px 0;
+}
+
+/* link used for the company name in the top section*/
+a.welcome
+{
+	font-style: inherit;
+	font-size: 40px;
+	color: #71582D;
+	/* takes aways the underline from the hyperlink */
+	text-decoration:none;
+}
+
+/* heading specifications for the company name in the top section */
+h1.welcome {
+	font-style: inherit;
+	font-size: 40px;
+	color: #71582D;
+	text-align: center;
+}
+
+/* Biggest headline used. used in several docs */
+h2.starter
+{
+	text-align: center;
+	color: #71582D;
+	margin: 0;
+}
+
+/* regular header, not centered. */
+h3.regularHeadder
+{
+	color: #71582D;
+}
+
+/* Regular header centered */
+h3.regularHeadderCenter
+{
+	color: #71582D;
+	text-align: center;
+}
+
+/*Headder used for important notice messages. Used in ass1 doc */
+h3.notice
+{
+	color: red;
+	font-style: oblique;
+	text-align: center;
+	padding: 10px;
+	margin: 0;
+}
+
+/*Headder used for news. used in ass1 doc */
+h3.news
+{
+	color: white;
+	font-style: oblique;
+	text-align: center;
+	padding: 10px;
+}
+
+/*Headder used for the slogan in th top section */
+h4.slogan
+{
+	color: #71582D;
+	text-align: center;
+	font-size: 20px;
+}
+
+/* headder just with color. used to keep the color style */
+h4.justColor
+{
+	color: #71582D;
+}
+
+/*Used for all normal text in webpage */
+p.regular
+{
+	color: #71582D;
+	font-style: normal;
+	font-size: 16;
+	align-content: center;
+}
+
+/* Text used for sale prices. Used in books and all the bookPages docs */
+p.sale
+{
+	color: red;
+	font-style: inherit;
+	font-size: 18;
+	align-content: center;
+}
+
+/* Text used for former prices. Used in books and all the bookPages docs */
+p.formerPrice
+{
+	color: #71582D;
+	font-style: normal;
+	font-size: 16;
+	align-content: center;
+	text-decoration: line-through;
+}
+
+/* text used in the footer section */
+p.footer
+{
+	font-style: italic;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* line used to devide information on the webpage */
+hr.welcome {
+	border-color: #71582D;
+	border-width: 2px;
+}
+
+/* button style used for navigation buttons in the top section */
+button.buttonGroupMenu {
+	background-color: #E5C380;
+	color: #267FBA;
+	border-radius: 25px;
+	width: 100px;
+	text-align: center;
+}
+
+/* Button style used in for buy button that hyperlinks to orderForm. used in Books and all booPages docs */
+button.buyButton
+{
+	align-content: center;
+	color: #BC8F49;
+	font-style: oblique;
+	background-color: #2B5F3D;
+	border-radius: 25px;
+	width: 90px;
+}
+
+/* used to color text in ordered lists */
+ol.list
+{
+	color: #71582D;
+}
+
+/* unordered list used in contact form in the contact doc*/
+ul.contactForm
+{
+	text-align: center;
+	list-style-type: none;
+}
+
+/* used for input type buttons in the contact form.  */
+input.contactButtons
+{
+	align-content: center;
+	color: #BC8F49;
+	font-style: oblique;
+	background-color: #2B5F3D;
+	border-radius: 25px;
+	width: 130px;
+	padding: 5px;
+}
+
+/* Used for sizing the pictures for the booklist in books doc */
+img.listPic
+{
+	height: 200px;
+	width: 150px;
+}
+
+/* Used for sizing the pictures in all the bookPages */
+img.pagePic
+{
+	height: 400px;
+	width: 300px;
+ 	padding: 20px;
+}
+
+/* Table used for the book list. Centering the list. */
+table.books
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	border-collapse:separate;
+    border-spacing:0 5px;
+	
+}
+
+/* div used to center search form in books doc */
+div.try
+{
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/* used to create space between the rows in the booklist in books doc */
+tr.bookList
+{
+	padding-top: 30px;
+	
+}
+
+/* Used to create space in the columns in the booklist in books doc */
+td.books
+{
+	padding: 20px;
+	
+}
+
+/* used for the information in second table in the bookpages. alligns the infor horizontally */
+td.bookInfo
+{
+	vertical-align: top;
+	padding: 20px;
+	width: 50%;
+}
+
+/* Label used in the order form in orderForm doc. gives all the labels the same size, so the input allignes */
+label.labelOrderForm
+{
+	display: inline-block;
+	width: 120px;
+}
+
+/* form style used for the search form in Books doc */
+form.searchForm
+{
+	padding: 10px;
+	text-align: center;
+}
+
+/* the container for all the sections: top, main and footer */
+#pageContainer {
+	width: 100%;
+	height: 100%;
+	
+
+}
+
+/* Style for the top section */
+#topSection {
+	padding: 10px;
+	background-color: #2B5F3D;
+}
+
+/* Style for main section. spacing */
+#mainSection {
+	background: #E2D2B6;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right:  50px;
+	padding-top: 30px;
+	
+}
+
+/* Style for footer. */
+#footer {
+	height: 50px;
+	bottom: 0;
+	background-color: #2B5F3D;
+	padding-left: 50px;
+	padding-right:  50px;
+}

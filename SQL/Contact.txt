@@ -1,0 +1,9 @@
+DROP TABLE Contact;
+     
+     CREATE TABLE Contact
+     ( Name VARCHAR(200), 
+       Email VARCHAR(200),
+       Message VARCHAR(2000)
+     ); 
+
+commit;
